@@ -1,0 +1,51 @@
+.why-us {
+    max-width: 1200px;
+    margin: 250px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 70px;
+    box-sizing: border-box;
+}
+
+.why-title h2 {
+    font-size: 48px;
+    line-height: 120%;
+    color: #1f1f1f;
+}
+
+.why-cards {
+    display: flex;
+    gap: 60px;
+}
+
+.why-card {
+    width: 260px;
+}
+
+.why-card h3 {
+    font-size: 26px;
+    color: #1f1f1f;
+    margin-bottom: 25px;
+}
+
+.why-card p {
+    width: 284px;
+    height: 90px;
+    font-size: 16px;
+    line-height: 180%;
+    color: #7a7a7a;
+    margin-bottom: 30px;
+}
+
+.why-card a {
+    text-decoration: none;
+    color: #E58411;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.why-card a span {
+    font-size: 26px;
+}
