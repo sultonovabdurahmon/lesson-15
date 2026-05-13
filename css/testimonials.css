@@ -1,7 +1,13 @@
 .testimonials {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 100px auto;
     text-align: center;
+
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    overflow-x: hidden; /* 🔥 убирает правый скролл */
 }
 
 .section-subtitle {
@@ -22,6 +28,7 @@
     justify-content: center;
     gap: 30px;
     position: relative;
+    flex-wrap: nowrap; 
 }
 
 .testimonial-card {
@@ -31,6 +38,7 @@
     overflow: hidden;
     position: relative;
     box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    flex-shrink: 0;
 }
 
 .bg-image {
@@ -81,9 +89,15 @@
 }
 
 .stars {
+    font-size: 25px;
     margin-top: 20px;
     color: #F6B76F;
     letter-spacing: 3px;
+}
+
+.stars span {
+    font-size: 25px;
+    color: #FDE0C6;
 }
 
 .arrow {
@@ -94,22 +108,67 @@
     background: white;
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
+    transform: translateY(-100%);
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
 }
 
 .arrow.left {
-    left: -25px;
+    left: 0;
 }
 
 .arrow.right {
-    right: -25px;
+    right: 0;
 }
 
-.arrow i {
-    color: #1E1E1E;
-    font-size: 16px;
+@media (max-width: 1200px) {
+
+    .testimonials {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .testimonial-card {
+        width: 320px;
+        height: 460px;
+    }
+
+    .testimonial-wrapper {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .testimonial-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        max-width: 370px;
+    }
+
+    .arrow {
+        display: none;
+    }
 }

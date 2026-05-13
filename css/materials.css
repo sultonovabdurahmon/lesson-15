@@ -3,44 +3,39 @@
     justify-content: space-between;
     align-items: center;
     gap: 100px;
+
+    max-width: 1200px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    flex-wrap: nowrap;
+    overflow-x: hidden;
 }
 
+/* TEXT BLOCK */
 .materials-content {
     width: 450px;
+    flex-shrink: 0;
 }
 
+/* IMAGES BLOCK */
 .materials-images {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 25px;
     position: relative;
+
+    flex-shrink: 0;
 }
 
+/* SMALL IMAGES */
 .small-images {
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
-
-.small-images img:first-child {
-    width: 223px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.small-images img:last-child {
-    width: 223px;
-    height: 338px;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.small-images img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 20px;
 }
 
 .img-top {
@@ -54,10 +49,10 @@
     width: 223px;
     height: 338px;
     object-fit: cover;
-    object-position: left;
     border-radius: 20px;
 }
 
+/* BIG IMAGE */
 .big-image {
     position: relative;
 }
@@ -66,18 +61,80 @@
     width: 223px;
     height: 250px;
     background: #EFEFEF;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
     position: absolute;
     top: -50px;
-    right: 0px;
+    right: 0;
     z-index: 1;
 }
 
 .big-image img {
-    width: 320px;
+    width: 400px;
     height: 445px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
     position: relative;
     z-index: 2;
+}
+
+/* =========================
+   ADAPTIVE
+========================= */
+
+@media (max-width: 1200px) {
+
+    .materials {
+        gap: 60px;
+    }
+
+    .big-image img {
+        width: 350px;
+        height: auto;
+    }
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+
+    .materials {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .materials-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .materials-images {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .light-box {
+        display: none;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .materials {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .img-top,
+    .img-bottom {
+        width: 180px;
+        height: auto;
+    }
+
+    .big-image img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
 }

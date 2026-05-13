@@ -1,7 +1,10 @@
 .experience {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 100px auto;
     margin-top: 200px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .experience-top {
@@ -21,7 +24,7 @@
     width: 450px;
     height: 300px;
     background: #EFEFEF;
-    border-radius: 20px;
+    border-radius: 0px 20px 20px 0px;
     position: absolute;
     top: -60px;
     z-index: 1;
@@ -29,7 +32,7 @@
 
 .experience-image img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 0px 20px 20px 0px;
     position: relative;
     z-index: 2;
 }
@@ -66,4 +69,58 @@
     text-decoration: none;
     color: #E58411;
     font-weight: 600;
+}
+
+/* =========================
+   ADAPTIVE
+========================= */
+
+@media (max-width: 1200px) {
+
+    .experience {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .experience-top {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .experience-top {
+        gap: 40px;
+    }
+
+    .experience-image {
+        width: 55%;
+    }
+
+    .experience-content {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .experience {
+        margin-top: 120px;
+    }
+
+    .experience-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .experience-image,
+    .experience-content {
+        width: 100%;
+    }
+
+    .bg-box {
+        width: 100%;
+        height: 250px;
+    }
 }

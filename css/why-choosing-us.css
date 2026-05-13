@@ -1,11 +1,11 @@
 .why-us {
     max-width: 1200px;
-    margin: 350px auto 0;
+    margin: 200px auto 0;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     gap: 70px;
-    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .why-title h2 {
@@ -16,11 +16,15 @@
 
 .why-cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 60px;
+    width: 100%;
+    min-width: 0;
 }
 
 .why-card {
     width: 260px;
+    min-width: 0;
 }
 
 .why-card h3 {
