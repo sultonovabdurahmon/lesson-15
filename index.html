@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panto</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/why-choosing-us.css">
@@ -10,6 +11,8 @@
     <link rel="stylesheet" href="css/materials.css">
     <link rel="stylesheet" href="css/testimonials.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/search-cart.css">
+    <link rel="stylesheet" href="css/adaptive.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
           rel="stylesheet">
 </head>
@@ -21,15 +24,20 @@
         <div class="logo">Panto</div>
 
         <nav class="navbar">
-            <a href="#">Furniture</a>
-            <a href="#">Shop</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
+            <a href="#furniture">Furniture</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
         </nav>
+
+        <button class="burger" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
         <div class="cart">
             <img src="images/Bag.png" alt="bag">
-            <img class="badge-img" src="images/Group 48095384.png" alt="badge">
         </div>
     </div>
 
@@ -51,8 +59,6 @@
             </button>
         </div>
     </div>    
-    
-    
 
 </header>
 
@@ -118,7 +124,7 @@
 
 
 
-    <section class="products">
+    <section class="products" id="shop">
 
         <h2>Best Selling Product</h2>
     
@@ -250,7 +256,7 @@
 
 
 
-    <section class="experience">
+    <section class="experience" id="about">
 
         <div class="experience-top">
     
@@ -280,7 +286,7 @@
         </div>
     
 
-        <div class="materials">
+        <div class="materials" id="furniture">
     
             <div class="materials-content">
     
@@ -350,8 +356,8 @@
                     <span>Pedagang Asongan</span>
     
                     <p>
-                        “Terimakasih banyak, kini ruanganku
-                        menjadi lebih mewah dan terlihat mahal”
+                        "Terimakasih banyak, kini ruanganku
+                        menjadi lebih mewah dan terlihat mahal"
                     </p>
     
                     <div class="stars">
@@ -378,9 +384,9 @@
                     <span>Ibu Rumah Tangga</span>
     
                     <p>
-                        “Makasih Panto, aku sekarang merasa
+                        "Makasih Panto, aku sekarang merasa
                         tinggal di apartment karena barang-barang
-                        yang terlihat mewah”
+                        yang terlihat mewah"
                     </p>
     
                     <div class="stars">
@@ -407,8 +413,8 @@
                     <span>Karyawan Swasta</span>
     
                     <p>
-                        “Sangat terjangkau untuk kantong
-                        saya yang tidak terlalu banyak”
+                        "Sangat terjangkau untuk kantong
+                        saya yang tidak terlalu banyak"
                     </p>
     
                     <div class="stars">
@@ -430,7 +436,7 @@
 
 
     
-<footer class="footer">
+<footer class="footer" id="contact">
     
     <div class="footer-top">
 
@@ -497,6 +503,8 @@
     </div>
 
 </footer>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
