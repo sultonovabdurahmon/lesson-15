@@ -1,6 +1,5 @@
 @media (max-width: 1024px) {
 
-  /* ХЕДЕР */
   .topnav {
     padding: 16px 20px;
   }
@@ -53,12 +52,9 @@
   }
 }
 
-/* =============================================
-   МОБИЛЬНЫЙ — до 768px
-============================================= */
+  /* МОБИЛЬНЫЙ */
 @media (max-width: 768px) {
 
-  /* --- ХЕДЕР --- */
   .header {
     height: auto;
     min-height: 100vh;
@@ -76,7 +72,6 @@
     font-size: 24px;
   }
 
-  /* Прячем обычную навигацию — делаем бургер */
   .navbar {
     display: none;
     width: 100%;
@@ -175,7 +170,7 @@
     right: -10px;
   }
 
-  /* --- WHY US --- */
+  /*WHY US*/
   .why-us {
     margin-top: 60px;
     flex-direction: column;
@@ -201,7 +196,7 @@
     height: auto;
   }
 
-  /* --- PRODUCTS --- */
+  /*PRODUCTS*/
   .products {
     margin-top: 60px;
     padding: 40px 16px;
@@ -215,7 +210,7 @@
     margin-bottom: 36px;
   }
 
-  /* --- EXPERIENCE --- */
+  /*EXPERIENCE*/
   .experience {
     margin-top: 60px;
     padding: 0 16px;
@@ -245,7 +240,7 @@
     display: none;
   }
 
-  /* --- MATERIALS --- */
+  /*MATERIALS*/
   .materials {
     flex-direction: column;
     gap: 36px;
@@ -289,7 +284,7 @@
     display: none;
   }
 
-  /* --- TESTIMONIALS --- */
+  /*TESTIMONIALS*/
   .testimonials {
     margin: 60px auto;
     padding: 0 16px;
@@ -316,7 +311,7 @@
     display: none;
   }
 
-  /* --- FOOTER --- */
+  /*FOOTER*/
   .footer {
     padding: 50px 16px 30px;
   }
@@ -352,9 +347,8 @@
   }
 }
 
-/* =============================================
-   МАЛЕНЬКИЙ МОБИЛЬНЫЙ — до 480px
-============================================= */
+  /* МАЛЕНЬКИЙ МОБИЛЬНЫЙ */
+
 @media (max-width: 480px) {
 
   .content h1 {
